@@ -2,17 +2,11 @@
 
 #Задаю переменные координат точек
 
-# Postal_office = (0, 2)
-# Griboedov = (2, 5)
-# Baker_Street = (5, 2)
-# Wide_garden = (6, 6)
-# Evergreen_alley = (8, 3)
-
-Postal_office = (int(input('Введите Х координату стартового объекта: ')),int(input('Введите Y координату стартового объекта: ')))
-Griboedov = (int(input('Введите Х координату объекта: ')),int(input('Введите Y координату объекта: ')))
-Baker_Street = (int(input('Введите Х координату объекта: ')),int(input('Введите Y координату объекта: ')))
-Wide_garden = (int(input('Введите Х координату объекта: ')),int(input('Введите Y координату объекта: ')))
-Evergreen_alley = (int(input('Введите Х координату объекта: ')),int(input('Введите Y координату объекта: '))) 
+Postal_office = (0, 2)
+Griboedov = (2, 5)
+Baker_Street = (5, 2)
+Wide_garden = (6, 6)
+Evergreen_alley = (8, 3) 
 
 x = (Griboedov[0], Baker_Street[0], Wide_garden[0], Evergreen_alley[0]) #Сортирую координаты
 y = (Griboedov[1], Baker_Street[1], Wide_garden[1], Evergreen_alley[1]) 
@@ -437,11 +431,11 @@ if (c1 + c2 + c3) == 5:                                  #Проверка на 
     true_path.append(fourth_path[1])
     c4 = 1
 elif (c1 + c2 + c3) == 3:
-    true_path.append(fourth_path[2])
-    c4 = 2
-elif (c1 + c2 + c3) == 4:
     true_path.append(fourth_path[3])
     c4 = 3
+elif (c1 + c2 + c3) == 4:
+    true_path.append(fourth_path[2])
+    c4 = 2
 elif (c1 + c2 + c3) == 6:
     true_path.append(fourth_path[0])
     c4 = 0    
